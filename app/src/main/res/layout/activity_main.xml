@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/myresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/mrresult"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="61dp"
+        android:layout_height="63dp"
+        android:onClick="clickmul"
+        android:text="@string/mulbtn"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/myresult"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="61dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="204dp"
+        android:onClick="clicksub"
+        android:text="@string/subbtnn"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toEndOf="@+id/sumbtt"
+        app:layout_constraintTop_toBottomOf="@+id/myresult"
+        app:layout_constraintVertical_bias="0.928" />
+
+    <Button
+        android:id="@+id/sumbtt"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="208dp"
+        android:onClick="clickSum"
+        android:text="@string/sumbtn"
+        android:textSize="34sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myresult" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="61dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="204dp"
+        android:onClick="clickdiv"
+        android:text="@string/divbtn"
+        android:textSize="34sp"
+        app:layout_constraintTop_toBottomOf="@+id/myresult"
+        tools:layout_editor_absoluteX="280dp" />
+
+    <EditText
+        android:id="@+id/number1"
+        android:layout_width="360dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="35dp"
+        android:ems="10"
+        android:hint="number 1"
+        android:inputType="number"
+        android:textColorLink="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="286dp" />
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="361dp"
+        android:layout_height="37dp"
+        android:ems="10"
+        android:hint="number 2"
+        android:inputType="number"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="347dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

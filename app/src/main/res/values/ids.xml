@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="subbtnn" type="id">_</item>
+    <item name="mulbtn" type="id">*</item>
+    <item name="divbtn" type="id">/</item>
+    <item name="sumbtn" type="id">+</item>
+</resources>
